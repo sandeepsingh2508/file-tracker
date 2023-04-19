@@ -1,0 +1,55 @@
+.track-view{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.history-box{
+    display: flex;
+    gap:2rem;
+}
+
+.tracks{
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 4rem; */
+    
+}
+.track-spot{
+    padding-top: 1rem;
+    border-left: 4px solid black;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid black;
+    border-radius: 100%;
+    left: -11px;
+    z-index: 1;
+}
+.curr-spot{
+    background-color: lightgreen;
+}
+.old-spot{
+    background-color: aliceblue
+}
+.qr-box{
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+.qr-print-btn{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .history-box{
+        flex-direction: column;
+    }
+}
